@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+
+  <body>
+    <div class="bodyHeaderName">
+      <h2>
+        My Name: <%= studentname %>
+      </h2>
+    </div>
+    
+    <div class="bodyHeaderTitle">
+      <h1><%= title %></h1>
+    </div>
+
+    <div class="bodyList">
+      <ul>
+        <% acronym.forEach(function(acronym) { %>
+          <!--In line styling for the list items-->
+          <li style="padding-top: 30px;">
+            <b><%= acronym.name %></b> </br></br> <%= acronym.description %> 
+          </li>
+          <% }); %>
+      </ul>
+    </div>
+
+    
+    
+  </body>
+</html>
